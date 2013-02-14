@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<?php echo ${1:\$form}->dateRangeRow(${2:\$model}, '${3:dateRangeField}',
+        array('${4:hint}'=>'${5:Click inside! An even a date range field!.}',
+        'prepend'=>'<i class="icon-calendar"></i>',
+        'options' => array('callback'=>'js:function(start, end){console.log(start.toString("MMMM d, yyyy") + " - " + end.toString("MMMM d, yyyy"));}')
+        )); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ydaterenge</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

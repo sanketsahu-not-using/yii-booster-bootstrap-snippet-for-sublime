@@ -3,7 +3,7 @@
 <?php echo ${1:\$form}->dropDownListRow(\$model, 'dropdown', array('${2:Something ...}', '${3:1}', '${4:2}', '${5:3}', '${6:4}', '${7:5}')); ?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>yiiselect</tabTrigger>
+	<tabTrigger>yselect</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

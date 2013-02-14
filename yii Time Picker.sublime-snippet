@@ -1,9 +1,12 @@
 <snippet>
 	<content><![CDATA[
-<?php echo ${1:\$form}->checkBoxListInlineRow(\$model, 'inlineCheckboxes', array('${2:1}', '${3:2}', '${4:3}')); ?>
+<?php echo ${1:\$form}->timepickerRow(${2:\$model}, '${3:timepicker}', 
+	array('${4:hint}'=>'${5:Nice bootstrap time picker}', 
+	'append'=>'<i class="icon-time" style="cursor:pointer"></i>'
+));?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>yinlinecheckbox</tabTrigger>
+	<tabTrigger>ytime</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

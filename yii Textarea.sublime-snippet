@@ -3,7 +3,7 @@
 <?php echo ${1:\$form}->textAreaRow(\$model, 'textarea', array('class'=>'${2:span8}', 'rows'=>${3:5})); ?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>yiitextarea</tabTrigger>
+	<tabTrigger>ytextarea</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

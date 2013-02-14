@@ -3,7 +3,7 @@
 <?php echo ${1:\$form}->uneditableRow(\$model, 'uneditable'); ?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>yiiuneditable</tabTrigger>
+	<tabTrigger>yuneditable</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

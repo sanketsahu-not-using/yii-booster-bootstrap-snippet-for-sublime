@@ -7,7 +7,7 @@
 ), array('${5:hint}'=>'${6:<strong>Note:</strong> Labels surround all the options for much larger click areas.}')); ?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>yiicheckbox</tabTrigger>
+	<tabTrigger>ycheckbox</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>
