@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<?php echo ${1:\$form}->checkBoxListRow(\$model, 'checkboxes', array(
+    '${2:Option one is this and that—be sure to include why it\'s great}',
+    '${3:Option two can also be checked and included in form results}',
+    '${4:Option three can—yes, you guessed it—also be checked and included in form results}',
+), array('${5:hint}'=>'${6:<strong>Note:</strong> Labels surround all the options for much larger click areas.}')); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yiicheckbox</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

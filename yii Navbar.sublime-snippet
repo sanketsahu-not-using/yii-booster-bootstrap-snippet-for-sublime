@@ -1,0 +1,49 @@
+<snippet>
+	<content><![CDATA[
+<?php \$this->widget('bootstrap.widgets.TbNavbar', array(
+    'type'=>'${1:}', // null or 'inverse'
+    'brand'=>'${2:Project name}',
+    'brandUrl'=>'${3:#}',
+    'collapse'=>true, // requires bootstrap-responsive.css
+    'items'=>array(
+        array(
+            'class'=>'bootstrap.widgets.TbMenu',
+            'items'=>array(
+                array('label'=>'${4:Home}', 'url'=>'${5:#}', 'active'=>true),
+                array('label'=>'${6:Link}', 'url'=>'${7:#}'),
+                array('label'=>'${8:Dropdown}', 'url'=>'${9:#}', 'items'=>array(
+                    array('label'=>'${10:Action}', 'url'=>'${11:#}'),
+                    array('label'=>'${12:Another action}', 'url'=>'${13:#}'),
+                    array('label'=>'${14:Something else here}', 'url'=>'${15:#}'),
+                    '---',
+                    array('label'=>'${16:NAV HEADER}'),
+                    array('label'=>'${17:Separated link}', 'url'=>'${18:#}'),
+                    array('label'=>'${19:One more separated link}', 'url'=>'${20:#}'),
+                )),
+            ),
+        ),
+
+        '<form class="navbar-search pull-left" action="${21:}"><input type="text" class="search-query span2" placeholder="Search"></form>',
+        array(
+            'class'=>'bootstrap.widgets.TbMenu',
+            'htmlOptions'=>array('class'=>'pull-right'),
+            'items'=>array(
+                array('label'=>'${22:Link}', 'url'=>'${23:#}'),
+                array('label'=>'${24:Dropdown}', 'url'=>'${25:#}', 'items'=>array(
+                    array('label'=>'${26:Action}', 'url'=>'${27:#}'),
+                    array('label'=>'${28:Another action}', 'url'=>'${29:#}'),
+                    array('label'=>'${30:Something else here}', 'url'=>'${31:#}'),
+                    '---',
+                    array('label'=>'${32:Separated link}', 'url'=>'${33:#}'),
+                )),
+            ),
+        ),
+    ),
+)); ?>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yiinavbar</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

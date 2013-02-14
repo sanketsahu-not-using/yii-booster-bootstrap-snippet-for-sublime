@@ -1,0 +1,40 @@
+<snippet>
+	<content><![CDATA[
+<div class="${1:form}">
+	<?php \$form=\$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+		'id'=>'${2:login-form}',
+	    'type'=>'${3:horizontal}',
+		'enableClientValidation'=>true,
+		'clientOptions'=>array(
+			'validateOnSubmit'=>true,
+		),
+	)); ?>
+
+		<p class="note">Fields with <span class="required">*</span> are required.</p>
+
+		<?php echo \$form->textFieldRow(\$model,'username'); ?>
+
+		<?php echo \$form->passwordFieldRow(\$model,'password',array(
+	        
+	    )); ?>
+
+		<?php echo \$form->checkBoxRow(\$model,'rememberMe'); ?>
+
+		<div class="{4:form-actions}">
+			<?php \$this->widget('bootstrap.widgets.TbButton', array(
+	            'buttonType'=>'${5:submit}',
+	            'type'=>'${6:primary}',
+	            'label'=>'${7:Login}',
+	        )); ?>
+		</div>
+
+	<?php \$this->endWidget(); ?>
+
+</div><!-- form -->
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yiilogin</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

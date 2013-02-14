@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+<?php \$this->widget('bootstrap.widgets.TbButtonGroup', array(
+'buttons'=>array(
+array('label'=>'${1:1}', 'url'=>'${2:#}'),
+array('label'=>'${3:2}', 'url'=>'${4:#}'),
+array('label'=>'${5:3}', 'url'=>'${6:#}'),
+array('label'=>'${7:4}', 'url'=>'${8:#}'),
+),
+)); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ybtngroup</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

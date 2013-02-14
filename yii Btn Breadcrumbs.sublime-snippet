@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<?php \$this->widget('bootstrap.widgets.TbBreadcrumbs', array(
+'links'=>array('${1:Library}'=>'${2:#}', '${3:Data}'),
+'separator'=>'${4:&rsaquo;&rsaquo;}',
+
+)); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ybreadcrumbs</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

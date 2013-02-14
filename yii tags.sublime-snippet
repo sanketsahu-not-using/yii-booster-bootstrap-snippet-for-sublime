@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<?php \$this->widget('bootstrap.widgets.TbSelect2', array(
+	'asDropDownList' => false,
+	'name' => '${1:clevertech}',
+	'options' => array(
+		'tags' => array('${2:clever}','${3:is}', '${4:better}', '${5:clevertech}'),
+		'placeholder' => '${6:disciplines}',
+		'width' => '${7:40%}',
+		'tokenSeparators' => array(',', ' ')
+)));	 ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yiitags</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

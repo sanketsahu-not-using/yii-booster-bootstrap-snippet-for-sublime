@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+<?php \$this->widget('bootstrap.widgets.TbButton', array(
+    'buttonType'=>'button', 
+    'type'=>'${1:primary}', // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+    'label'=>'${2:Click me}',
+    'loadingText'=>'${3:loading...}',
+    'htmlOptions'=>array('${4:id}'=>'${5:buttonStateful}'),
+)); ?>
+
+<script type="text/javascript">
+	\$('${6:#buttonStateful}').click(function() {
+	    var btn = \$(this);
+	    btn.button('${7:loading}'); // call the loading function
+	    setTimeout(function() {
+	        btn.button('${8:reset}'); // call the reset function
+	    }, 3000);
+	});
+</script>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ybtnstateful</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,19 @@
+<snippet>
+	<content><![CDATA[
+<?php /** @var BootActiveForm \$form */
+	\$form = \$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+	    'id'=>'${1:searchForm}',
+	    'type'=>'search',
+	    'htmlOptions'=>array('class'=>'${2:well}'),
+	)); ?>
+	 
+	<?php echo \$form->textFieldRow($model, 'textField', array('class'=>'input-medium', 'prepend'=>'<i class="icon-search"></i>')); ?>
+	<?php \$this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'label'=>'${3:Go}')); ?>
+	 
+	<?php \$this->endWidget(); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yiisearch</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

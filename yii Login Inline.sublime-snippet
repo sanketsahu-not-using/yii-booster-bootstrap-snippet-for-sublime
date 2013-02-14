@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+<?php /** @var BootActiveForm ${1:\$form} */
+	${1:\$form} = \$this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+	    'id'=>'${2:inlineForm}',
+	    'type'=>'inline',
+	    'htmlOptions'=>array('class'=>'${3:well}'),
+	)); ?>
+	 
+	<?php echo ${1:\$form}->textFieldRow(\$model, 'textField', array('class'=>'${4:input-small}')); ?>
+	<?php echo ${1:\$form}->passwordFieldRow(\$model, 'password', array('class'=>'${5:input-small}')); ?>
+	<?php \$this->widget('bootstrap.widgets.TbButton', array('buttonType'=>'submit', 'label'=>'${6:Log in}')); ?>
+	 
+	<?php \$this->endWidget(); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yiilogininline</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

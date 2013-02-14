@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<?php \$this->widget('bootstrap.widgets.TbThumbnails', array(
+    'dataProvider'=>${1:\$listDataProvider},
+    'template'=>"{items}\n{pager}",
+    'itemView'=>'_thumb',
+)); ?>
+<li class="span3">
+    <a href="${2:#}" class="thumbnail" rel="tooltip" data-title="${3:Tooltip}">
+        <img src="${4:http://placehold.it/280x180}" alt="${5:}" />
+    </a>
+</li>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yiithubnail</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

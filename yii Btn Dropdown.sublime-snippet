@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+<div class="btn-toolbar">
+<?php \$this->widget('bootstrap.widgets.TbButtonGroup', array(
+'type'=>'${1:primary}', // '', 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+'buttons'=>array(
+array('label'=>'${2:Action}', 'items'=>array(
+array('label'=>'${3:Action}', 'url'=>'${4:#}'),
+array('label'=>'${5:Another action}', 'url'=>'${6:#}'),
+array('label'=>'${7:Something else}', 'url'=>'${8:#}'),
+'---',
+array('label'=>'${9:Separate link}', 'url'=>'${10:#}'),
+)),
+),
+)); ?>
+</div>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ybtndrop</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

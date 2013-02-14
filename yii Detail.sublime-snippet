@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<?php \$this->widget('bootstrap.widgets.TbDetailView', array(
+'data'=>array('id'=>1, '${1:firstName}'=>'${2:Mark}', '${3:lastName}'=>'${4:Otto}', '${5:language}'=>'${6:CSS}'),
+'attributes'=>array(
+    array('name'=>'${1:firstName}', 'label'=>'${7:First name}'),
+    array('name'=>'${3:lastName}', 'label'=>'${8:Last name}'),
+    array('name'=>'${5:language}', 'label'=>'${9:Language}'),
+),
+)); ?>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yiidetail</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

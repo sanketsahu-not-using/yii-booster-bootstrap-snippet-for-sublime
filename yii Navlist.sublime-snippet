@@ -1,0 +1,20 @@
+<snippet>
+	<content><![CDATA[
+<?php \$this->widget('bootstrap.widgets.TbMenu', array(
+    'type'=>'list',
+    'items'=>array(
+        array('label'=>'${1:LIST HEADER}'),
+        array('label'=>'${2:Home}', 'icon'=>'${3:home}', 'url'=>'${4:#}', 'active'=>true),
+        array('label'=>'${5:Library}', 'icon'=>'${6:book}', 'url'=>'${7:#}'),	        
+        array('label'=>'${8:ANOTHER LIST HEADER}'),
+        array('label'=>'${9:Application}', 'icon'=>'${10:pencil}', 'url'=>'${11:#}'),
+        array('label'=>'${12:Profile}', 'icon'=>'${13:user}', 'url'=>'${14:#}'),
+        array('label'=>'${15:Help}', 'icon'=>'${16:flag}', 'url'=>'${17:#}'),
+    ),
+)); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yiinavlist</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<?php echo ${1:\$form}->checkBoxRow(\$model, 'disabledCheckbox', array('disabled'=>true)); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yiidisabledCheckbox</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
