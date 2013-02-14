@@ -1,27 +1,26 @@
 <snippet>
 	<content><![CDATA[
 <?php 
-${1:\$gridDataProvider} = new CArrayDataProvider(array(
-    array('id'=>${2:1}, '${3:firstName}'=>'${4:Mark}', '${5:lastName}'=>'${6:Otto}', '${7:language}'=>'${8:CSS}'),
-    array('id'=>${9:2}, '${3:firstName}'=>'${10:Jacob}', '${5:lastName}'=>'${11:Thornton}', '${7:language}'=>'${12:JavaScript}'),
-    array('id'=>${13:3}, '${3:firstName}'=>'${14:Stu}', '${5:lastName}'=>'${15:Dent}', '${7:language}'=>'${16:HTML}'),
-));
 
- \$this->widget('bootstrap.widgets.TbGridView', array(
-    'type'=>'${17:striped bordered condensed}',
-    'dataProvider'=>${1:\$gridDataProvider},
-    'template'=>"{items}",
-    'columns'=>array(
-        array('name'=>'id', 'header'=>'${18:#}'),
-        array('name'=>'${3:firstName}', 'header'=>'${19:First name}'),
-        array('name'=>'${5:lastName}', 'header'=>'${20:Last name}'),
-        array('name'=>'${7:language}', 'header'=>'${21:Language}'),
+\$this->widget('bootstrap.widgets.TbExtendedGridView', array(
+    'fixedHeader' => true,
+    'headerOffset' => 40, // 40px is the height of the main navigation at bootstrap
+    'type' => 'striped',
+    'dataProvider' => ${1:\$model->search()},
+    'responsiveTable' => true,
+    'template' => "{summary}\n{items}\n{pager}\n{extendedSummary}",
+    'columns' => array(
+        array('name'=>'id', 'header'=>'#'),
+        array('name'=>'name', 'header'=>'Name'),
+        array('name'=>'profile_pic', 'header'=>'Profile Pic'),
         array(
             'class'=>'bootstrap.widgets.TbButtonColumn',
             'htmlOptions'=>array('style'=>'width: 50px'),
         ),
     ),
-)); ?>
+));
+
+?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ygrid</tabTrigger>
