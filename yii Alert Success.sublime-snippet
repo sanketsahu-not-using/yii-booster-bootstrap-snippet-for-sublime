@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<?php Yii::app()->user->setFlash('success', '${1:<strong>Well done!</strong> You successfully read this important alert message.}');
+\$this->widget('bootstrap.widgets.TbAlert', array(
+    'block'=>true, // display a larger alert block?
+    'fade'=>true, // use transitions?
+    'closeText'=>'×', // close link text - if set to false, no close link is displayed
+    'alerts'=>array( // configurations per alert type
+	    'success'=>array('block'=>${2:true}, 'fade'=>true, 'closeText'=>'×'), // success, info, warning, error or danger
+    ),
+)); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yalertsuccess</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

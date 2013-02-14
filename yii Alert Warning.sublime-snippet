@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<?php Yii::app()->user->setFlash('warning', '${1:<strong>Warning!</strong> Best check yo self, you are not looking too good.}');
+\$this->widget('bootstrap.widgets.TbAlert', array(
+    'block'=>true, // display a larger alert block?
+    'fade'=>true, // use transitions?
+    'closeText'=>'×', // close link text - if set to false, no close link is displayed
+    'alerts'=>array( // configurations per alert type
+	    'warning'=>array('block'=>${2:true}, 'fade'=>true, 'closeText'=>'×'), // success, info, warning, error or danger
+    ),
+)); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yalertwarning</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

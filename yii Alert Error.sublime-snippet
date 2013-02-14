@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+<?php Yii::app()->user->setFlash('error', '${1:<strong>Oh snap!</strong> Change a few things up and try submitting again.}');
+\$this->widget('bootstrap.widgets.TbAlert', array(
+    'block'=>true, // display a larger alert block?
+    'fade'=>true, // use transitions?
+    'closeText'=>'×', // close link text - if set to false, no close link is displayed
+    'alerts'=>array( // configurations per alert type
+	    'error'=>array('block'=>${2:true}, 'fade'=>true, 'closeText'=>'×'), // success, info, warning, error or danger
+    ),
+)); ?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>yalerterror</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
