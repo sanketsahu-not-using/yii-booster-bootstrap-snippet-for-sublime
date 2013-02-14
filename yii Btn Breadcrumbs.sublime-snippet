@@ -3,7 +3,6 @@
 <?php \$this->widget('bootstrap.widgets.TbBreadcrumbs', array(
 'links'=>array('${1:Library}'=>'${2:#}', '${3:Data}'),
 'separator'=>'${4:&rsaquo;&rsaquo;}',
-
 )); ?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->

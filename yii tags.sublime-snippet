@@ -1,14 +1,11 @@
 <snippet>
 	<content><![CDATA[
-<?php \$this->widget('bootstrap.widgets.TbSelect2', array(
-	'asDropDownList' => false,
-	'name' => '${1:clevertech}',
-	'options' => array(
-		'tags' => array('${2:clever}','${3:is}', '${4:better}', '${5:clevertech}'),
-		'placeholder' => '${6:disciplines}',
-		'width' => '${7:40%}',
-		'tokenSeparators' => array(',', ' ')
-)));	 ?>
+<?php echo ${1:\$form}->select2Row(${2:\$model}, '${3:select2}', array('asDropDownList' => false, 'options' => array(
+	'tags' => array('${4:clever}','${5:is}', '${6:better}', '${7:clevertech}'),
+	'placeholder' => '${8:type clever, or is, or just type!}',
+	'width' => '${9:40%}',
+	'tokenSeparators' => array(',', ' ')
+))); ?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ytags</tabTrigger>

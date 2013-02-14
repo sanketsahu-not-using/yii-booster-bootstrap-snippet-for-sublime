@@ -3,7 +3,7 @@
 <?php echo ${1:\$form}->toggleButtonRow(\$model, '${2:toggle}'); ?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>ybtntoggle</tabTrigger>
+	<tabTrigger>ybtnselecttoggle</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<!-- <scope>source.python</scope> -->
 </snippet>

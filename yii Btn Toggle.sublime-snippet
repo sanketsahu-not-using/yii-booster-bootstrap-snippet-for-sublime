@@ -1,11 +1,11 @@
 <snippet>
 	<content><![CDATA[
-	<?php \$this->widget('bootstrap.widgets.TbButton', array(
-	    'buttonType'=>'button',
-	    'type'=>'${1:primary}', // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
-	    'label'=>'${2:Toggle me}',
-	    'toggle'=>true,
-	)); ?>
+<?php \$this->widget('bootstrap.widgets.TbButton', array(
+	'buttonType'=>'button',
+	'type'=>'${1:primary}', // null, 'primary', 'info', 'success', 'warning', 'danger' or 'inverse'
+    'label'=>'${2:Toggle me}',
+    'toggle'=>true,
+)); ?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ybtntoggle</tabTrigger>

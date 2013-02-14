@@ -1,8 +1,8 @@
 <snippet>
 	<content><![CDATA[
-<?php echo {1:\$form}->datepickerRow({2:\$model}, '{3:dateField}',
+<?php echo ${1:\$form}->datepickerRow(${2:\$model}, '${3:dateField}',
         array('${4:hint}'=>'${5:Click inside! This is a super cool date field.}',
-        'prepend'=>'>i class="icon-calendar">>/i>')); ?>
+        'prepend'=>'<i class="icon-calendar"></i>')); ?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ydate</tabTrigger>

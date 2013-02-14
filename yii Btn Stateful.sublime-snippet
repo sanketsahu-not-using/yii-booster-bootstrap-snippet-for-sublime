@@ -17,7 +17,6 @@
 	    }, 3000);
 	});
 </script>
-
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ybtnstateful</tabTrigger>

@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
-	<?php \$this->widget('bootstrap.widgets.TbButton', array(
-	    'label'=>'${1:Button}',
-	    'type'=>'warning',
-	    'size'=>'',
-	)); ?>
+<?php \$this->widget('bootstrap.widgets.TbButton', array(
+    'label'=>'${1:Button}',
+    'type'=>'warning',
+    'size'=>'',
+)); ?>
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ybtnw</tabTrigger>
